@@ -27,7 +27,7 @@ public class BookInventory{
 1. Sinh ra 1000 đầu sách sử dụng [Java Faker](https://www.baeldung.com/java-faker). Ban đâu khi sinh ngẫu nhiên hãy tạo cả BookInventory với amount ngẫu nhiên từ 0 đến 100 quyển sách.
    Sử dụng phương thức: [POST] http://localhost:8082/v1/books/create và
    phương thức: [POST] http://localhost:8082/v1/book-inventories/create
-   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\CreateBooks.png"/>
+  https://user-images.githubusercontent.com/41589790/141747433-072fbd68-83bc-4c21-8e3e-d991483d77d4.png
    <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\CreateBookInventories.png"/>
 
 
