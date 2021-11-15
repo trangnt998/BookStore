@@ -36,7 +36,6 @@ public class BookInventoryRepository {
 
     //tạo số lượng tồn kho cho các đầu sách, số lượng ngẫu nhiên từ 0 đến 100
     public List<BookInventory> createBookInventories(List<Book> books){
-        //ArrayList<BookInventory> bookInventories = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < books.size(); i++){
             BookInventory bookInventory = new BookInventory(i,books.get(i).getId(), random.nextInt(101), LocalDateTime.now());
