@@ -29,6 +29,8 @@ public class BookInventoryService {
 
 
     public List<Book> findOutOfStock(){
+        List<BookInventory> bookInventories = bookInventoryRepository.createBookInventories(bookRepository.getBooks());
+
         return bookInventoryRepository.getBooksByAmount(0);
     }
 }

@@ -12,7 +12,7 @@ import java.util.Random;
 
 @Repository
 public class BookInventoryRepository {
-    List<BookInventory> bookInventories;
+    private List<BookInventory> bookInventories;
     @Autowired
     BookRepository bookRepository;
 
@@ -27,12 +27,16 @@ public class BookInventoryRepository {
 //    }
 
 
+    public List<BookInventory> getBookInventories() {
+        return bookInventories;
+    }
     public BookInventoryRepository() {
         bookInventories = new ArrayList<>();
     }
 
+    //tạo số lượng tồn kho cho các đầu sách, số lượng ngẫu nhiên từ 0 đến 100
     public List<BookInventory> createBookInventories(List<Book> books){
-        ArrayList<BookInventory> bookInventories = new ArrayList<>();
+        //ArrayList<BookInventory> bookInventories = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < books.size(); i++){
             BookInventory bookInventory = new BookInventory(i,books.get(i).getId(), random.nextInt(101), LocalDateTime.now());
@@ -47,6 +51,7 @@ public class BookInventoryRepository {
     public List<Book> getBooksByAmount(int amount){
         List<Book> books = new ArrayList<>();
         List<Book> allbooks = bookRepository.getAll();
+
         for (int i = 0; i < bookInventories.size(); i++){
             if (bookInventories.get(i).getAmount() == amount){
                 String bookId = bookInventories.get(i).getBookId();
@@ -61,26 +66,29 @@ public class BookInventoryRepository {
         return books;
     }
 
+//
+//   public static void main(String[] args) {
+//
+////          Test create Book's inventory
+////        BookRepository bookRepository = new BookRepository();
+////        List<BookInventory> bookInventories = createBookInventories(bookRepository.createBook());
+////        for (int i = 0; i < bookInventories.size(); i++){
+////            System.out.println(bookInventories.get(i).toString());
+////        }
+//
+//
+//        //Test get book out of stock
+////        BookRepository bookRepository = new BookRepository();
+////        List<BookInventory> bookInventories = createBookInventories(bookRepository.createBook());
+////        for (int i = 0; i < bookInventories.size(); i++){
+////            if (bookInventories.get(i).getAmount() == 0){
+////                System.out.println(bookInventories.get(i).toString());
+////            }
+////        }
+//
 
-/*    public static void main(String[] args) {
-
-//          Test create Book's inventory
-//        BookRepository bookRepository = new BookRepository();
-//        List<BookInventory> bookInventories = createBookInventories(bookRepository.createBook());
-//        for (int i = 0; i < bookInventories.size(); i++){
-//            System.out.println(bookInventories.get(i).toString());
-//        }
-
-
-        //Test get book out of stock
-//        BookRepository bookRepository = new BookRepository();
-//        List<BookInventory> bookInventories = createBookInventories(bookRepository.createBook());
-//        for (int i = 0; i < bookInventories.size(); i++){
-//            if (bookInventories.get(i).getAmount() == 0){
-//                System.out.println(bookInventories.get(i).toString());
-//            }
-//        }
-    }*/
+//
+//    }
 
 
 }
