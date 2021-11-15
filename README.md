@@ -45,7 +45,7 @@ public class BookInventory{
 
 5. Liệt kê các đầu sách hiện đang hết amount = 0;
    Phương thức: [GET] http://localhost:8082/v1/book-inventories/out-of-stock
-   ![getBooksOutOfStock](https://user-images.githubusercontent.com/41589790/141751125-eeca29d6-522a-454e-8954-bb41bccb14fa.png)
+  ![getBooksOutOfStock](https://user-images.githubusercontent.com/41589790/141800558-30cd1732-83e2-4ab6-a36c-f97465afae6b.png)
 
 
 5. Giả lập lệnh mua sách buy_book, mặc định số lượng mua là 1 quyển, nhưng có thể mua nhiều hơn 1 quyển.
