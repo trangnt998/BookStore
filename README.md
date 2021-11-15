@@ -27,23 +27,24 @@ public class BookInventory{
 1. Sinh ra 1000 đầu sách sử dụng [Java Faker](https://www.baeldung.com/java-faker). Ban đâu khi sinh ngẫu nhiên hãy tạo cả BookInventory với amount ngẫu nhiên từ 0 đến 100 quyển sách.
    Sử dụng phương thức: [POST] http://localhost:8082/v1/books/create và
    phương thức: [POST] http://localhost:8082/v1/book-inventories/create
-![](C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\CreateBooks.png)
-![](C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\CreateBookInventories.png)
+   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\CreateBooks.png"/>
+   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\CreateBookInventories.png"/>
 
 
 2. Liệt kê các đầu sách sắp xếp theo tiêu chí title từ A-Z
    Phương thức: [GET] http://localhost:8082/v1/books
-![](C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\SortByTitle.png)
+   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\SortByTitle.png"/>
 
 
 3. Tìm đầu sách có title chứa keyword nào đó
    Ví dụ, cần tìm đầu sách có title chứa "Things"
    Phương thức: [GET] http://localhost:8082/v1/books/title-contain-Things
-![](C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\GetBooksByKeyword.png)
+   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\GetBooksByKeyword.png"/>
 
 
 5. Liệt kê các đầu sách hiện đang hết amount = 0;
    Phương thức: [GET] http://localhost:8082/v1/book-inventories/out-of-stock
+
 
 
 5. Giả lập lệnh mua sách buy_book, mặc định số lượng mua là 1 quyển, nhưng có thể mua nhiều hơn 1 quyển.
