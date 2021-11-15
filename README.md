@@ -29,18 +29,18 @@ public class BookInventory{
    phương thức: [POST] http://localhost:8082/v1/book-inventories/create
    ![feature-image](https://user-images.githubusercontent.com/41589790/141747433-072fbd68-83bc-4c21-8e3e-d991483d77d4.png)
  
-   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\CreateBookInventories.png"/>
+   ![CreateBookInventories](https://user-images.githubusercontent.com/41589790/141748481-2259bbd8-d077-4ac4-a942-b695a1089b4c.png)
 
 
 2. Liệt kê các đầu sách sắp xếp theo tiêu chí title từ A-Z
    Phương thức: [GET] http://localhost:8082/v1/books
-   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\SortByTitle.png"/>
+   ![SortByTitle](https://user-images.githubusercontent.com/41589790/141748770-5984d1e0-cd53-495f-97b5-fcec694ab579.png)
 
 
 3. Tìm đầu sách có title chứa keyword nào đó
    Ví dụ, cần tìm đầu sách có title chứa "Things"
    Phương thức: [GET] http://localhost:8082/v1/books/title-contain-Things
-   <img src="C:\Users\trang.nguyen24_onemo\Documents\SpringBootClass\Book-Management-main-thanhkhao\BookStore\image\GetBooksByKeyword.png"/>
+   ![GetBooksByKeyword](https://user-images.githubusercontent.com/41589790/141748664-09d3b3da-7203-4af4-b9cd-85590f47ec0f.png)
 
 
 5. Liệt kê các đầu sách hiện đang hết amount = 0;
